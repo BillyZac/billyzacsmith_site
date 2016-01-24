@@ -2,7 +2,7 @@ var app = angular.module('app', [])
 
 app.controller('MainController', function($scope) {
   var tile1 = {
-    image_url: 'http://www.kylelambert.co.uk/gallery/adobe-ideas-eye/images/kyle-lambert-adobe-ideas-eye-ipad-painting-small.jpg'
+    image_url: './images/face-tile_0001_1.png'
   }
   var tile2 = {
     image_url: 'http://www.daz3d.com/media/catalog/product/cache/1/thumbnail/689303033aebc8cae535000c73c8db4b/l/u/lunar-craters-moonscape-2.jpg'
@@ -29,8 +29,39 @@ app.controller('MainController', function($scope) {
     image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/PIA17211-SaturnMoon-Enceladus-CloseFlyby-20151219.jpg/200px-PIA17211-SaturnMoon-Enceladus-CloseFlyby-20151219.jpg'
   }
   $scope.rows = [
-    [tile1, tile2, tile3],
-    [tile4, tile5, tile6],
-    [tile7, tile8, tile9]]
+    [
+      {
+        image_url: './images/face-tile_0001_1.png'
+      },
+      {
+        image_url: './images/face-tile_0002_2.png'
+      },
+      {
+        image_url: './images/face-tile_0003_3.png'
+      }
+    ],
+    [
+      {
+        image_url: './images/face-tile_0004_4.png'
+      },
+      {
+        image_url: './images/face-tile_0005_5.png'
+      },
+      {
+        image_url: './images/face-tile_0006_6.png'
+      }
+    ],
+    [
+      {
+        image_url: './images/face-tile_0007_7.png'
+      },
+      {
+        image_url: './images/face-tile_0008_8.png'
+      },
+      {
+        image_url: './images/face-tile_0009_9.png'
+      }
+    ]
+  ]
 
 })
