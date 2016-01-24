@@ -17,8 +17,10 @@ body {
 }
 
 .tile {
-  outline: 1px black solid;
+  /*outline: 1px black solid;*/
   height: 200px;
   width: 200px;
-  background: #eee;
+  /*background: #eee;*/
+  background-position: center;
+  background-size: cover;
 }
