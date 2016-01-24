@@ -31,35 +31,35 @@ app.controller('MainController', function($scope) {
   $scope.rows = [
     [
       {
-        image_url: './images/face-tile_0001_1.png'
+        image_url: './images/face-tile_0001.png'
       },
       {
-        image_url: './images/face-tile_0002_2.png'
+        image_url: './images/face-tile_0002.png'
       },
       {
-        image_url: './images/face-tile_0003_3.png'
+        image_url: './images/face-tile_0003.png'
       }
     ],
     [
       {
-        image_url: './images/face-tile_0004_4.png'
+        image_url: './images/face-tile_0004.png'
       },
       {
-        image_url: './images/face-tile_0005_5.png'
+        image_url: './images/face-tile_0005.png'
       },
       {
-        image_url: './images/face-tile_0006_6.png'
+        image_url: './images/face-tile_0006.png'
       }
     ],
     [
       {
-        image_url: './images/face-tile_0007_7.png'
+        image_url: './images/face-tile_0007.png'
       },
       {
-        image_url: './images/face-tile_0008_8.png'
+        image_url: './images/face-tile_0008.png'
       },
       {
-        image_url: './images/face-tile_0009_9.png'
+        image_url: './images/face-tile_0009.png'
       }
     ]
   ]
