@@ -1,0 +1,27 @@
+/* Base Styles ---------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Code Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* Link Styles ---------------------*/
+a {
+	color: #92be3a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7da52c;
+}
+
+

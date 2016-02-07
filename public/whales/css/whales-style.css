@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'EB Garamond', serif;
+}
+
+/* Link Styles ---------------------*/
+a {
+	text-decoration: none;
+}
+
+.text-page a {
+	color: #fff;
+}
+
+.text-page a:hover {
+	color: #a1cfd9;
+	text-decoration: none;
+}
+
+
+/* Book pages ---------------------*/
+
+.page {
+	padding: 0;
+	margin-bottom: 50px;
+	box-shadow: 0px 11px 11px rgba(72,72,93,0.75);
+}
+
+.page img {
+	width: 100%	
+}
+
+.text-page {
+	text-align: center;
+	padding: 70px 20px 100px 20px;
+	background: #212121;
+	color: #fff;
+}
+
+#cover {
+	background: #212121 url("../img/meteor.gif");
+	background-size: cover;
+}
+
+#title {
+	letter-spacing: 0.6rem;
+	text-transform: uppercase;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	display: inline-block;
+}
+
+.text-page .byline {
+	letter-spacing: 0.2rem;
+	line-height: 1.1rem;
+}
+
+#whale {
+	width: 70px;
+	margin: 0px auto;
+	padding: 50px 0;
+	display: block;
+}
+
+.intro-quotes {
+	text-align: center;
+	font-size: 2.2rem;
+	width: 450px;
+	margin: 0 auto;
+	padding: 100px 10px;
+}
+
+.name {
+	font-size: 1.8rem;
+}
+
+#quote-1, #quote-2, #last-words, #coleridge {
+	padding: 100px 0px;	
+}
+
+#footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #494949;
+}
+
+/* Adjust quotes for vertical iphone size */
+@media (max-width: 330px) {
+	.intro-quotes {
+		width: 300px;
+		font-size: 1.8rem;
+	}
+	.intro-quotes .name {
+		font-size: 1.4rem;
+	}
+}
