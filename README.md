@@ -1,5 +1,5 @@
-# www.billyzacsmith.com
-Source code for my personal site, www.billyzacsmith.com
+# billyzacsmith.com
+Source code for my personal site, billyzacsmith.com
 
 ## Staging
 [Right here](https://billyzacsmith-com.firebaseapp.com/)
