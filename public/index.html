@@ -3,24 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Zachary Smith</title>
+    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/config.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/master.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body ng-controller="MainController">
-    <div class="container">
-      <div class="row title">
-        <h1>zac smith</h1>
-      </div>
+  <body>
+      <header class="row title">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" ui-sref="home">zac smith</a>
+            </div>
+            <ul class="nav nav-pills nav-justified">
+              <li role="presentation"><a ui-sref="work">work</a></li>
+              <li role="presentation"><a ui-sref="work">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-    <div class="row">
-      <div class="col-xs-12">
-        <video class="center-block" src="images/muybridge-hat_pixels.mp4" autoplay preload="auto" loop="true" poster="" width="300"></video>
-        <!-- <img src="images/muybridge-hat---no-bg.gif" alt="" /> -->
-      </div>
+      <!-- <input type="text" ng-model="q"> -->
+    <div class="container-fluid blurg">
+      <div class="view" ui-view></div>
     </div>
-
-  </div>
-
-      <!-- <a href="downloads/Zac_Smith_resume-Fall2015.pdf">Resume</a> -->
   </body>
 </html>

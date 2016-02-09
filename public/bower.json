@@ -1,0 +1,21 @@
+{
+  "name": "billyzacsmith.com",
+  "homepage": "https://github.com/BillyZac/billyzacsmith_site",
+  "description": "billyzacsmith.com",
+  "authors": [
+    "Zac Smith"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-animate": "^1.5.0"
+  }
+}
