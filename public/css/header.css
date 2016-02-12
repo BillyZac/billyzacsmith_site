@@ -1,0 +1,34 @@
+/* Site Header */
+
+header {
+  display: flex;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.site-title h1 {
+  margin: 0;
+  margin-left: 20px;
+  padding: 10px;
+  background: #ec008c;
+  color: white;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px;
+  color: #FFF;
+  border-bottom: 10px solid #ec008c;
+}

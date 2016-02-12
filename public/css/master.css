@@ -14,30 +14,7 @@ body {
   font-size: 2rem;
 }
 
-.navbar-default .navbar-brand {
-  background: #ec008c;
-  padding-left: 32px;
-  font-size: 3rem;
-  color: #fff;
-  margin: 0;
-  border: none;
-  transition: background-color 0.2s ease;
-  transition: color 0.2s ease;
-}
-
-.nav a {
-  color: #ec008c;
-  border-radius: 0;
-  border-bottom: 3px solid transparent;
-  transition: border-bottom 0.5s ease;
-}
-
-.nav>li>a:hover {
-  border-radius: 0;
-  background-color: transparent;
-  border-bottom: 3px solid #ec008c;
-}
-
+/* UI Views */
 .view[ui-view] {
   height: 100%;
 }
