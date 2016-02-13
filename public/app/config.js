@@ -11,6 +11,10 @@ function configRoutes($stateProvider, $urlRouterProvider) {
           url: '/work',
           templateUrl: 'app/layout/work.html'
         })
+        .state('contact', {
+          url: '/contact',
+          templateUrl: 'app/layout/contact.html'
+        })
 
         $urlRouterProvider.otherwise('/')
   }
