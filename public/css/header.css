@@ -16,7 +16,7 @@ header {
   margin-left: 20px;
   padding: 10px;
   background: #ec008c;
-  color: white;
+  color: #FFF;
 }
 
 .nav-link {
@@ -29,6 +29,6 @@ header {
   text-decoration: none;
   font-size: 24px;
   padding: 10px;
-  color: #FFF;
+  color: #333;
   border-bottom: 10px solid #ec008c;
 }

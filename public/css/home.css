@@ -1,0 +1,9 @@
+.muybridge {
+  /*background: url(../images/hat-guy-v2.png) no-repeat center center fixed;*/
+  background: url(../images/muybridge-hat.png) no-repeat center;
+  height: 800px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+
+}
