@@ -1,0 +1,43 @@
+/*body * {
+  outline: 1px solid pink;
+}*/
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.project-title {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+}
+
+.project-body {
+  display: flex;
+}
+
+.project-body {
+}
+
+.project-thumbnail {
+  height: 100px;
+  width: 100px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-body img {
+  max-width: 100%;
+}
+
+.project-links a {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+.project-description {
+  width: 60%;
+}

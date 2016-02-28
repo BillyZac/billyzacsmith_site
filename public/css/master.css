@@ -87,3 +87,9 @@ a {
 a:hover {
   color: #F7CAC9;
 }
+
+.subpage-container {
+  margin: 20px 150px;
+  display: flex;
+  flex-direction: column;
+}

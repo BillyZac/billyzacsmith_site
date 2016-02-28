@@ -11,9 +11,9 @@ function configRoutes($stateProvider, $urlRouterProvider) {
           url: '/',
           templateUrl: 'app/layout/nav.html'
         })
-        .state('work', {
-          url: '/work',
-          templateUrl: 'app/layout/work.html'
+        .state('portfolio', {
+          url: '/portfolio',
+          templateUrl: 'app/layout/portfolio.html'
         })
         .state('contact', {
           url: '/contact',

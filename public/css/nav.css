@@ -1,7 +1,4 @@
 .nav-page-container {
-  margin: 0 150px;
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
 }
 
