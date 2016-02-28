@@ -1,9 +1,53 @@
-.muybridge {
-  /*background: url(../images/hat-guy-v2.png) no-repeat center center fixed;*/
-  background: url(../images/muybridge-hat.png) no-repeat center;
-  height: 800px;
-  width: 500px;
-  margin: 0 auto;
-  padding: 0;
+.view-container {
+  position: relative;
+  padding-top: 55vh;
+  background-image: url(../images/cloud-2.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  border-bottom: 3px #333 solid;
+}
 
+.guy {
+  width: 10vw;
+  height: 10vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/_guy-01.png);
+  position: absolute;
+  bottom: 0;
+  left: 45vw;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  margin-bottom: 1%;
+  border-top:    4px solid #FFF;
+  border-bottom: 4px solid #FFF;
+  border-right:  4px solid transparent;
+  border-left:   4px solid transparent;
+  opacity: 0.3;
+  animation: spin 35s linear infinite;
+  position: absolute;
+  left: 40vw;
+  bottom: 0;
+}
+
+@keyframes spin {
+    0%   { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.links span {
+  transition: color 2s;
+}
+
+.links span:hover {
+  color: pink;
+}
+
+.links a {
+  color: aqua;
 }
