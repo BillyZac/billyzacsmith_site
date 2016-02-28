@@ -1,7 +1,7 @@
 .view-container {
   position: relative;
   padding-top: 55vh;
-  background-image: url(../images/cloud-2.png);
+  background-image: url(../images/cloud-4.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   border-bottom: 3px #333 solid;
@@ -41,13 +41,13 @@
 }
 
 .links span {
-  transition: color 2s;
+  transition: color 0.1s;
 }
 
 .links span:hover {
-  color: pink;
+  color: #F7CAC9;
 }
 
 .links a {
-  color: aqua;
+  color: #92A8D1;
 }
