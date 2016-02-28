@@ -1,0 +1,29 @@
+.nav-page-container {
+  margin: 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-page-container ul {
+  list-style: none;
+  text-align: right;
+}
+
+.nav-page-container li {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.nav-page-container a {
+  color: #505050;
+  transition: color 0.1s;
+}
+
+.nav-page-container a:hover {
+  color: #F7CAC9;
+}
+
+.nav-page-container p {
+  margin-bottom: 0rem;
+}

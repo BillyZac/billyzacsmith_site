@@ -1,7 +1,9 @@
 .view-container {
   position: relative;
   padding-top: 55vh;
-  background-image: url(../images/cloud-4.png);
+  background:
+    url(../images/cloud-4.png),
+    linear-gradient(hsla(0, 0%, 0%, 0), 85%, hsla(223, 37%, 71%, 0.3));
   background-position: bottom center;
   background-repeat: no-repeat;
   border-bottom: 3px #333 solid;

@@ -7,6 +7,10 @@ function configRoutes($stateProvider, $urlRouterProvider) {
           url: '/',
           templateUrl: 'app/layout/home.html'
         })
+        .state('nav', {
+          url: '/',
+          templateUrl: 'app/layout/nav.html'
+        })
         .state('work', {
           url: '/work',
           templateUrl: 'app/layout/work.html'
