@@ -53,3 +53,13 @@
 .links a {
   color: #92A8D1;
 }
+
+.title.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.title.ng-enter.ng-enter-active {
+  opacity:1;
+}

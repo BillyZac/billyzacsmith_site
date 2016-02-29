@@ -5,7 +5,8 @@ function configRoutes($stateProvider, $urlRouterProvider) {
       $stateProvider
         .state('home', {
           url: '/',
-          templateUrl: 'app/layout/home.html'
+          templateUrl: 'app/layout/home.html',
+          controller: 'HomeController as home'
         })
         .state('nav', {
           url: '/',
