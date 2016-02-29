@@ -30,7 +30,7 @@
   border-bottom: 4px solid #FFF;
   border-right:  4px solid transparent;
   border-left:   4px solid transparent;
-  opacity: 0.3;
+  opacity: 0.6;
   animation: spin 35s linear infinite;
   position: absolute;
   left: 40vw;
