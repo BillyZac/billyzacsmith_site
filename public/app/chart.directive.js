@@ -11,22 +11,49 @@ function chart() {
             data: '='
         },
         link: function ($scope, $element, $attr) {
-            //we select the element of this directive
-            var element =
-                d3.select($element[0])
-                    .append("svg")
-                    .attr("width", 300)
-                    .attr("height", 300)
+          var h = 300
+          var w = 1000
 
-            element.selectAll("rect")
-                .data($scope.vm.data)
-                .enter()
-                .append("rect")
+          var dataPoints1 = makeDataPoints(20, 20)
+          var dataPoints2 = makeDataPoints(20, 20)
+          var dataPoints3 = makeDataPoints(20, 5)
+
+          function makeDataPoints(numberOfPoints, factor) {
+            var points = []
+            for (var i = 1; i <= numberOfPoints; i++) {
+              var point = {
+                x: i * 8,
+                y: 10 + (Math.random() * (numberOfPoints - i) * factor)
+              }
+              if (i === 1 || i === numberOfPoints) {
+                point.y = 0
+              }
+              points.push(point)
+            }
+            return points
+          }
+
+          var lineFun = d3.svg.line()
+            .x(function(d) { return d.x * 6 })
+            .y(function(d) { return h - d.y })
+            .interpolate("basis")
+
+          var svg =
+          d3.select(".chart")
+            .append("svg")
+            .attr({
+              width: w,
+              height: h
+            })
+
+            svg
+              .append("path")
                 .attr({
-                    x: function (d, i) { return i * 300 / $scope.vm.data.length },
-                    y: function (d) { return 300 - (d * 4) + 3 },
-                    width: 300 / $scope.vm.data.length - 5,
-                    height: function (d) { return d * 4 }
+                  d: lineFun(dataPoints1),
+                  // "fill": "hsla(180, 93%, 75%, 1)",
+                  "stroke": "hsla(180, 93%, 55%, 1)",
+                  "stroke-width": 2,
+                  "fill": "none"
                 })
         },
         controller: 'HomeController',
