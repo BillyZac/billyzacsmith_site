@@ -1,7 +1,7 @@
 angular.module('app')
-.config(['$stateProvider', '$urlRouterProvider', configRoutes])
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', configRoutes])
 
-function configRoutes($stateProvider, $urlRouterProvider) {
+function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
       $stateProvider
         .state('home', {
           url: '/',
@@ -20,6 +20,9 @@ function configRoutes($stateProvider, $urlRouterProvider) {
           url: '/contact',
           templateUrl: 'app/layout/contact.html'
         })
+
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true)
 
         $urlRouterProvider.otherwise('/')
   }
