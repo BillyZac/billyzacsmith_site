@@ -12,11 +12,11 @@ function chart() {
         },
         link: function ($scope, $element, $attr) {
           var h = 300
-          var w = 1000
+          var w = 1200
 
-          var dataPoints1 = makeDataPoints(20, 20)
-          var dataPoints2 = makeDataPoints(20, 20)
-          var dataPoints3 = makeDataPoints(20, 5)
+          var dataPoints1 = makeDataPoints(18, 18)
+          var dataPoints2 = makeDataPoints(23, 15)
+          var dataPoints3 = makeDataPoints(25, 5)
 
           function makeDataPoints(numberOfPoints, factor) {
             var points = []
@@ -51,8 +51,26 @@ function chart() {
                 .attr({
                   d: lineFun(dataPoints1),
                   // "fill": "hsla(180, 93%, 75%, 1)",
-                  "stroke": "hsla(180, 93%, 55%, 1)",
+                  "stroke": "hsla(180, 100%, 45%, 1)",
+                  "stroke-width": 4,
+                  "fill": "none"
+                })
+            svg
+              .append("path")
+                .attr({
+                  d: lineFun(dataPoints2),
+                  // "fill": "hsla(180, 93%, 75%, 1)",
+                  "stroke": "hsla(1, 74%, 68%, 1)",
                   "stroke-width": 2,
+                  "fill": "none"
+                })
+            svg
+              .append("path")
+                .attr({
+                  d: lineFun(dataPoints3),
+                  // "fill": "hsla(180, 93%, 75%, 1)",
+                  "stroke": "hsla(180, 93%, 55%, 1)",
+                  "stroke-width": 1,
                   "fill": "none"
                 })
         },

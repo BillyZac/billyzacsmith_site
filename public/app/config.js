@@ -9,7 +9,7 @@ function configRoutes($stateProvider, $urlRouterProvider) {
           controller: 'HomeController as home'
         })
         .state('nav', {
-          url: '/',
+          url: '/nav',
           templateUrl: 'app/layout/nav.html'
         })
         .state('portfolio', {
