@@ -5,10 +5,12 @@ function HomeController($scope) {
   var vm = this
 
   var isms = [
-    'is a designer and front end developer in Denver, Colorado.',
+    'is a designer and web developer in Denver, Colorado.',
     'likes kale, but loves Cinnamon Toast Crunch with half & half.',
     'grew up in the sticks.',
-    "thinks Robert Bringhurst is the bee's knees."
+    'thinks Robert Bringhurst is the bee\'s knees.',
+    'prefers dawn to dusk, but only slightly.',
+    'illustrated a children\'s book.',
   ]
 
   vm.tagline = isms[0] // So don't have to wait for first timeout.
