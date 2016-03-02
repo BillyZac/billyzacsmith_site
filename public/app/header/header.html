@@ -1,0 +1,22 @@
+<header>
+  <h1>
+    <span class="name">Zac Smith</span>
+    <span class="tagline">{{ header.tagline }}</span>
+  </h1>
+  <span class="nav-toggle fa fa-navicon" ng-show="!header.show" ng-click="header.toggleShow()"></span>
+</header>
+<nav>
+  <div class="nav-page-container" ng-show="header.show" ng-click="header.toggleShow()">
+    <div class="nav-items">
+      <div class="nav-toggle fa fa-times" ng-show="header.show"></div>
+      <ul>
+        <li><a ng-click="header.navigate('home')">Home</a></li>
+        <li><a ng-click="header.navigate('portfolio')">Portfolio</a></li>
+        <li><a ng-click="header.navigate('contact')">Contact</a></li>
+        <li><a href="https://medium.com/@billyzac">Blog</a></li>
+      </ul>
+      <p>billyzacsmith@gmail.com</p>
+      <p>720-251-5980</p>
+    </div>
+  </div>
+</nav>

@@ -11,45 +11,27 @@
     <script type="text/javascript" src="/app/app.js"></script>
     <script type="text/javascript" src="/app/config.js"></script>
     <script type="text/javascript" src="/app/home/home.controller.js"></script>
-    <script type="text/javascript" src="/app/nav/nav.controller.js"></script>
+    <script type="text/javascript" src="/app/header/header.controller.js"></script>
     <script type="text/javascript" src="/app/chart.directive.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="./css/master.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="./css/header.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./app/header/header.css" media="screen" title="no title" charset="utf-8">
+
     <link rel="stylesheet" href="./css/portfolio.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="./css/contact.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="./css/home.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="./css/nav.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body ng-controller="NavController as nav">
-    <header>
-      <h1>
-        <span class="name">Zac Smith</span>
-        <span class="tagline">hey this a tagline.</span>
-      </h1>
-      <span class="nav-toggle fa fa-navicon" ng-show="!nav.show" ng-click="nav.toggleShow()"   >show nav</span>
-    </header>
-    <nav>
-      <div class="nav-page-container" ng-show="nav.show" >
-        <div class="nav-items">
-          <div class="fa fa-x" ng-show="nav.show" ng-click="nav.toggleShow()">hide nav</div>
-          <ul>
-            <li><a ng-click="nav.navigate('portfolio')">Portfolio</a></li>
-            <li><a ui-sref="contact">Contact</a></li>
-            <li><a href="https://medium.com/@billyzac">Blog</a></li>
-          </ul>
-          <p>
-            billyzacsmith@gmail.com
-          </p>
-          <p>
-            720-251-5980
-          </p>
-        </div>
-      </div>
-    </nav>
-    <div ui-view>
-    </div>
+  <body>
+    <ng-include
+      src="'./app/header/header.html'"
+      [onload="string"]
+      [autoscroll="string"]
+      ng-controller="HeaderController as header">
+    </ng-include>
+    <main ui-view>
+    </main>
   </body>
 </html>
