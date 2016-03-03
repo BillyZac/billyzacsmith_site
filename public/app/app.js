@@ -1,1 +1,3 @@
-angular.module('app', ['ui.router', 'ngAnimate'])
+(function() {
+  angular.module('app', ['ui.router', 'ngAnimate'])
+}())
