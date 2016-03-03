@@ -1,0 +1,89 @@
+/*body * {
+  outline: pink solid 1px;
+}*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 80px;
+
+  color: #505050;
+}
+
+.tile {
+  background: #555;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* UI Views */
+.view[ui-view] {
+  height: 100%;
+  width: 600px;
+  margin-top: 30px;
+}
+
+[ui-view].ng-enter {
+  transition: 0.5s ease all;
+  opacity: 0;
+}
+[ui-view].ng-enter.ng-enter-active {
+  opacity: 1;
+}
+[ui-view].ng-leave {
+  transition: 0.1s ease all;
+  opacity: 1;
+}
+[ui-view].ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+.work-page {
+  background: #fff;
+  padding: 30px 100px;
+  margin: 0;
+  height: 1000px;
+}
+
+.container-fluid {
+  padding: 0;
+  /*margin: 0;*/
+}
+
+.title {
+  width: 660px;
+  height: 200px;
+}
+.name {
+  color: #F7CAC9;
+  font-weight: 400;
+}
+.tagline {
+  color: #505050;
+  font-weight: 300;
+  display: none;
+}
+/*Show tagline only on big screens*/
+@media (min-width: 800px) {
+  .tagline {
+    display: inline;
+  }
+}
+
+a {
+  text-decoration: none;
+  color:#92A8D1;
+  transition: color 0.1s;
+}
+a:hover {
+  color: #F7CAC9;
+}
+
+.subpage-container {
+  margin: 20px 150px;
+  display: flex;
+  flex-direction: column;
+}

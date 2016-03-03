@@ -1,0 +1,51 @@
+/*body * {
+  outline: 5px dotted pink;
+}*/
+
+$primary-color: #333;
+$rose: #F7CAC9;
+$blue: #92A8D1;
+$gray: #505050;
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-container {
+  width: 1000px;
+  height: 700px;
+  display: flex;
+  background: $blue;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .small {
+    background: $rose;
+    width: 30%;
+
+    div {
+      height: 300px;
+      width: 100%;
+      background: $gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circle {
+        border: 0.5rem solid white;
+        border-radius: 50%;
+        width:  80%;
+        height: 80%;
+      }
+    }
+  }
+
+  .large {
+    width: 70%;
+  }
+}

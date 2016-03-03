@@ -1,0 +1,27 @@
+{
+  "name": "billyzacsmith-com",
+  "version": "1.0.0",
+  "description": "Source code for my personal site, [billyzacsmith.com](http://www.billyzacsmith.com/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BillyZac/billyzacsmith_site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BillyZac/billyzacsmith_site/issues"
+  },
+  "homepage": "https://github.com/BillyZac/billyzacsmith_site#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-webpack": "^1.5.0",
+    "webpack": "^1.12.14"
+  }
+}
