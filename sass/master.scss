@@ -15,9 +15,10 @@ body {
 
 .view-container {
   width: 1000px;
-  height: 700px;
+  // height: 700px;
   display: flex;
-  background: $blue;
+  flex-direction: column;
+  // background: $blue;
 }
 .box {
   width: 100%;
@@ -48,4 +49,29 @@ body {
   .large {
     width: 70%;
   }
+}
+
+// svg on home page
+.zac-smith-logo {
+  width: 1000px;
+  position: fixed;
+  z-index: -99;
+}
+.zac-smith-logo svg:hover {
+  filter: url(#blur-filter);
+  opacity: 0.2;
+  transition: 0.2s linear;
+}
+.zac-smith-logo path {
+  fill: $blue;
+}
+
+.invisible-box {
+  height: 650px;
+  width: 500px;
+}
+
+// line chart
+.chart path {
+  stroke: $blue;
 }
