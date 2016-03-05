@@ -26,13 +26,13 @@ body {
   display: flex;
 
   .small {
-    background: $rose;
+    // background: $rose;
     width: 30%;
 
     div {
       height: 300px;
       width: 100%;
-      background: $gray;
+      // background: white;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -56,14 +56,17 @@ body {
   width: 1000px;
   position: fixed;
   z-index: -99;
+  // filter: url(#blur-filter);
 }
 .zac-smith-logo svg:hover {
-  filter: url(#blur-filter);
-  opacity: 0.2;
   transition: 0.2s linear;
 }
 .zac-smith-logo path {
   fill: $blue;
+}
+
+.svg-background {
+  fill: none;
 }
 
 .invisible-box {
@@ -75,3 +78,28 @@ body {
 .chart path {
   stroke: $blue;
 }
+
+
+#face {
+  width: 100%;
+  stroke: $rose;
+  stroke-width: 0.25rem;
+  margin: 20px;
+  fill: none;
+
+  .background {
+    fill: none;
+    stroke: none;
+  }
+  circle, .mouth {
+    fill: $rose;
+    stroke: none;
+  }
+}
+
+// .twee-container {
+//   outline: 5px solid tomato;
+//   * {
+//     outline: 5px solid aqua;
+//   }
+// }
