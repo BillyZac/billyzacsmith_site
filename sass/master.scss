@@ -105,7 +105,7 @@ body {
 }
 
 .invisible-box {
-  height: 300px;
+  height: 600px;
   width: 500px;
 }
 
@@ -141,4 +141,10 @@ body {
 
 .second-row {
   background: $blue;
+}
+
+// Blowing face
+square01 svg {
+  width: 100%;
+  height: 100%;
 }
