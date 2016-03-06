@@ -38,12 +38,12 @@ body {
     .row .small .earth {
       width: 3rem;
       height: 3rem;
-      background: #92A8D1;
+      background: #AEC5C4;
       border-radius: 50%; }
     .row .small .moon {
       width: 1rem;
       height: 1rem;
-      background: #92A8D1;
+      background: #AEC5C4;
       border-radius: 50%; }
 
 @keyframes spin {
@@ -59,12 +59,12 @@ body {
   width: 1000px;
   position: fixed;
   z-index: -99; }
-
-.zac-smith-logo svg:hover {
-  transition: 0.2s linear; }
-
-.zac-smith-logo path {
-  fill: #92A8D1; }
+  .zac-smith-logo .logo-svg-group {
+    transition: opacity 2s ease; }
+  .zac-smith-logo .blur {
+    opacity: 0.05; }
+  .zac-smith-logo path {
+    fill: #E08B5F; }
 
 .svg-background {
   fill: none; }
@@ -74,27 +74,14 @@ body {
   width: 500px; }
 
 .chart path {
-  stroke: #92A8D1; }
-
-#face {
-  width: 100%;
-  stroke: #F7CAC9;
-  stroke-width: 0.25rem;
-  margin: 20px;
-  fill: none; }
-  #face .background {
-    fill: none;
-    stroke: none; }
-  #face circle, #face .mouth {
-    fill: #F7CAC9;
-    stroke: none; }
+  stroke: #E7C966; }
 
 .second-row .large {
-  border-top: 40px solid #92A8D1; }
+  border-top: 40px solid #AEC5C4; }
   .second-row .large .tagline {
     margin: 0;
     padding: 0;
-    color: #92A8D1;
+    color: #E7C966;
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: bold; }
@@ -110,12 +97,12 @@ square01 .cls-1 {
   stroke: none; }
 
 square01 .cls-2 {
-  stroke: #92A8D1;
+  stroke: #E08B5F;
   fill: none;
   stroke-width: 5px; }
 
 square01 .cls-3 {
-  fill: #92A8D1; }
+  fill: #E08B5F; }
 
 square01 .cls-4 {
   fill: none;
@@ -123,7 +110,7 @@ square01 .cls-4 {
   stroke: white; }
 
 monster .cls-1 {
-  fill: #92A8D1; }
+  fill: #AEC5C4; }
 
 monster .cls-2 {
   fill: white; }
@@ -135,7 +122,7 @@ monster .cls-3 {
   stroke-width: 5px; }
 
 bulb .cls-1 {
-  fill: #92A8D1; }
+  fill: #AEC5C4; }
 
 bulb .cls-2 {
   fill: none;
@@ -150,5 +137,5 @@ triangle {
   triangle .triangle-bottomleft {
     width: 0;
     height: 0;
-    border-bottom: 300px solid #92A8D1;
+    border-bottom: 300px solid #AEC5C4;
     border-right: 300px solid transparent; }

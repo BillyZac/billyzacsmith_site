@@ -13,8 +13,14 @@
 
 $primary-color: #333;
 $rose: #F7CAC9;
-$blue: #92A8D1;
+$adobe-blue: #92A8D1;
 $gray: #505050;
+$blue: #AEC5C4;
+$mustard: #D6CA63;
+$gray: #75726F;
+$red: #E08B5F;
+$yellow: #E7C966;
+$ivory: #FEFAEF;
 
 body {
   display: flex;
@@ -89,17 +95,19 @@ body {
   }
 }
 
-// svg on home page
 .zac-smith-logo {
   width: 1000px;
   position: fixed;
   z-index: -99;
-}
-.zac-smith-logo svg:hover {
-  transition: 0.2s linear;
-}
-.zac-smith-logo path {
-  fill: $blue;
+  .logo-svg-group {
+    transition: opacity 2s ease;
+  }
+  .blur {
+    opacity: 0.05;
+  }
+  path {
+    fill: $red;
+  }
 }
 
 .svg-background {
@@ -113,28 +121,8 @@ body {
 
 // line chart
 .chart path {
-  stroke: $blue;
+  stroke: $yellow;
 }
-
-
-#face {
-  width: 100%;
-  stroke: $rose;
-  stroke-width: 0.25rem;
-  margin: 20px;
-  fill: none;
-
-  .background {
-    fill: none;
-    stroke: none;
-  }
-  circle, .mouth {
-    fill: $rose;
-    stroke: none;
-  }
-}
-
-
 
 .second-row {
   // background: $blue;
@@ -143,7 +131,7 @@ body {
     .tagline {
       margin: 0;
       padding: 0;
-      color: $blue;
+      color: $yellow;
       font-size: 2.5rem;
       text-transform: uppercase;
       font-weight: bold;
@@ -166,12 +154,12 @@ square01 {
     stroke: none;
   }
   .cls-2 {
-    stroke: $blue;
+    stroke: $red;
     fill: none;
     stroke-width: 5px;
   }
   .cls-3 {
-    fill: $blue;
+    fill: $red;
   }
   .cls-4 {
     fill: none;
