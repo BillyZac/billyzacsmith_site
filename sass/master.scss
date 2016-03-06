@@ -35,6 +35,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: space-between;
 
   .small {
     // background: $rose;
@@ -143,8 +144,50 @@ body {
   background: $blue;
 }
 
-// Blowing face
-square01 svg {
+// Give some size to svg illustrations
+square01 svg,
+monster svg
+ {
   width: 100%;
   height: 100%;
+}
+
+square01 {
+  .cls-1 {
+    fill: none;
+    stroke: none;
+  }
+  .cls-2 {
+    stroke: $blue;
+    fill: none;
+    stroke-width: 5px;
+  }
+  .cls-3 {
+    fill: $blue;
+  }
+  .cls-4 {
+    fill: none;
+    stroke-width: 5px;
+    stroke: white;
+  }
+}
+
+monster {
+  .cls-1 {
+    fill: $blue;
+  }
+  .cls-2 {
+    fill: white;
+  }
+  .cls-3 {
+    fill: none;
+    stroke: white;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+  }
+
+}
+
+.third-row * {
+  outline: 1px solid tomato;
 }

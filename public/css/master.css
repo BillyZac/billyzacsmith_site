@@ -14,7 +14,8 @@ body {
 .row {
   width: 100%;
   height: 100%;
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   .row .small {
     width: 30%;
     height: 300px;
@@ -96,6 +97,39 @@ body {
 .second-row {
   background: #92A8D1; }
 
-square01 svg {
+square01 svg,
+monster svg {
   width: 100%;
   height: 100%; }
+
+square01 .cls-1 {
+  fill: none;
+  stroke: none; }
+
+square01 .cls-2 {
+  stroke: #92A8D1;
+  fill: none;
+  stroke-width: 5px; }
+
+square01 .cls-3 {
+  fill: #92A8D1; }
+
+square01 .cls-4 {
+  fill: none;
+  stroke-width: 5px;
+  stroke: white; }
+
+monster .cls-1 {
+  fill: #92A8D1; }
+
+monster .cls-2 {
+  fill: white; }
+
+monster .cls-3 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 5px; }
+
+.third-row * {
+  outline: 1px solid tomato; }
