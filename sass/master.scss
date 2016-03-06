@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: sans-serif;
 }
 
 // @media for big screens
@@ -63,13 +64,13 @@ body {
     .earth {
       width: 3rem;
       height: 3rem;
-      background: white;
+      background: $blue;
       border-radius: 50%;
     }
     .moon {
       width: 1rem;
       height: 1rem;
-      background: white;
+      background: $blue;
       border-radius: 50%;
     }
     @keyframes spin {
@@ -132,16 +133,22 @@ body {
     stroke: none;
   }
 }
-.tagline {
-  margin: 2rem;
-  color: white;
-  font-family: monospace;
-  font-size: 3rem;
-}
+
 
 
 .second-row {
-  background: $blue;
+  // background: $blue;
+  .large {
+    border-top: 40px solid $blue;
+    .tagline {
+      margin: 0;
+      padding: 0;
+      color: $blue;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
 }
 
 // Give some size to svg illustrations
@@ -202,6 +209,14 @@ bulb {
   }
 }
 
-.third-row * {
-  outline: 1px solid tomato;
+triangle {
+  width: 300px;
+  height: 300px;
+  background: $rose;
+  .triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid $blue;
+    border-right: 300px solid transparent;
+  }
 }

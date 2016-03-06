@@ -4,7 +4,8 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  font-family: sans-serif; }
 
 .view-container {
   width: 1000px;
@@ -37,12 +38,12 @@ body {
     .row .small .earth {
       width: 3rem;
       height: 3rem;
-      background: white;
+      background: #92A8D1;
       border-radius: 50%; }
     .row .small .moon {
       width: 1rem;
       height: 1rem;
-      background: white;
+      background: #92A8D1;
       border-radius: 50%; }
 
 @keyframes spin {
@@ -88,14 +89,15 @@ body {
     fill: #F7CAC9;
     stroke: none; }
 
-.tagline {
-  margin: 2rem;
-  color: white;
-  font-family: monospace;
-  font-size: 3rem; }
-
-.second-row {
-  background: #92A8D1; }
+.second-row .large {
+  border-top: 40px solid #92A8D1; }
+  .second-row .large .tagline {
+    margin: 0;
+    padding: 0;
+    color: #92A8D1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 square01 svg,
 monster svg,
@@ -141,5 +143,12 @@ bulb .cls-2 {
   stroke-miterlimit: 10;
   stroke-width: 5px; }
 
-.third-row * {
-  outline: 1px solid tomato; }
+triangle {
+  width: 300px;
+  height: 300px;
+  background: #F7CAC9; }
+  triangle .triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid #92A8D1;
+    border-right: 300px solid transparent; }
