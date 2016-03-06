@@ -146,7 +146,8 @@ body {
 
 // Give some size to svg illustrations
 square01 svg,
-monster svg
+monster svg,
+bulb svg
  {
   width: 100%;
   height: 100%;
@@ -186,6 +187,19 @@ monster {
     stroke-width: 5px;
   }
 
+}
+
+bulb {
+  .cls-1 {
+    fill: $blue;
+  }
+
+  .cls-2 {
+    fill: none;
+    stroke: $rose;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+  }
 }
 
 .third-row * {
