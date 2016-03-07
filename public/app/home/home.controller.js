@@ -4,19 +4,18 @@
 
   function HomeController($scope, $window, ChartDataService, $interval) {
     $scope.blur = 1
-    $scope.filter = 'no-filter'
+    $scope.logoFilter = 'no-filter'
+    $scope.smallLogoVisible = 'zs-hide'
 
     // Blur and fade the logo when the user scrolls
     var fadeLogoWhenYIsThisNumber = 20
     $scope.$watch(function() {
       return $window.scrollY
     }, function() {
-      // $scope.blur = $window.scrollY / 20
-      // $scope.logoOpacity = 1 - $window.scrollY / fadeLogoWhenYIsThisNumber
-
       if ($window.scrollY > fadeLogoWhenYIsThisNumber) {
-        $scope.filter = 'blur'
+        $scope.logoFilter = 'blur'
         $scope.logoHeight = 120
+        $scope.smallLogoVisible = 'zs-show'
       }
 
     })

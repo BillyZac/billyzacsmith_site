@@ -59,20 +59,38 @@ body {
     width: 70%;
     height: 300px; }
 
-.zac-smith-logo {
+logo.large {
   width: 1000px;
   position: fixed;
   z-index: -99; }
-  .zac-smith-logo .logo-svg-group {
+  logo.large .logo-svg-group {
     transition: opacity 2s ease; }
-  .zac-smith-logo .blur {
-    opacity: 0.1;
+  logo.large .blur {
+    opacity: 0;
     filter: url(#blur-filter); }
-  .zac-smith-logo path {
-    fill: #E08B5F;
+  logo.large path {
     stroke: none; }
-  .zac-smith-logo .cls-8 {
-    fill: #AEC5C4; }
+
+logo.small svg {
+  width: 200px; }
+
+.logo-container {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background: white;
+  opacity: 0.95; }
+
+.zs-hide {
+  opacity: 0; }
+
+.zs-show {
+  opacity: 0.95; }
+
+logo.large {
+  margin-top: 10px; }
 
 .svg-background {
   fill: none; }
