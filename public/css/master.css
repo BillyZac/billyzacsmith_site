@@ -2,7 +2,7 @@
   outline: 5px dotted pink;
 }*/
 .twee-container {
-  margin-top: 580px;
+  margin-top: 385px;
   transition: margin 2s ease; }
 
 body {
@@ -66,10 +66,11 @@ body {
   .zac-smith-logo .logo-svg-group {
     transition: opacity 2s ease; }
   .zac-smith-logo .blur {
-    opacity: 0.05;
+    opacity: 0.1;
     filter: url(#blur-filter); }
   .zac-smith-logo path {
-    fill: #E08B5F; }
+    fill: #E08B5F;
+    stroke: none; }
 
 .svg-background {
   fill: none; }

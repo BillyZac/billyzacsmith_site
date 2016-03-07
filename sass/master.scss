@@ -3,7 +3,7 @@
 }*/
 
 .twee-container {
-  margin-top: 580px;
+  margin-top: 385px;
   transition: margin 2s ease;
 }
 
@@ -101,12 +101,14 @@ body {
     transition: opacity 2s ease;
   }
   .blur {
-    opacity: 0.05;
+    opacity: 0.1;
     filter: url(#blur-filter);
   }
   path {
     fill: $red;
+    stroke: none;
   }
+
 }
 
 .svg-background {

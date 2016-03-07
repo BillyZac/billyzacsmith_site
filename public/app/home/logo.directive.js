@@ -3,6 +3,6 @@ angular.module('app')
 
 function logo() {
   return {
-    templateUrl: './app/home/logo.html'
+    templateUrl: './app/home/logo2.html'
   }
 }
