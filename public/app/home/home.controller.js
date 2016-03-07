@@ -7,15 +7,16 @@
     $scope.filter = 'no-filter'
 
     // Blur and fade the logo when the user scrolls
-    var fadeLogoWhenYIsThisNumber = 200
+    var fadeLogoWhenYIsThisNumber = 20
     $scope.$watch(function() {
       return $window.scrollY
     }, function() {
-      $scope.blur = $window.scrollY / 20
+      // $scope.blur = $window.scrollY / 20
       // $scope.logoOpacity = 1 - $window.scrollY / fadeLogoWhenYIsThisNumber
 
-      if ($window.scrollY > 100) {
+      if ($window.scrollY > fadeLogoWhenYIsThisNumber) {
         $scope.filter = 'blur'
+        $scope.logoHeight = 120
       }
 
     })

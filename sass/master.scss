@@ -2,12 +2,10 @@
   outline: 5px dotted pink;
 }*/
 
-// .twee-container {
-//   outline: 5px solid tomato;
-//   * {
-//     outline: 5px solid aqua;
-//   }
-// }
+.twee-container {
+  margin-top: 580px;
+  transition: margin 2s ease;
+}
 
 
 
@@ -104,6 +102,7 @@ body {
   }
   .blur {
     opacity: 0.05;
+    filter: url(#blur-filter);
   }
   path {
     fill: $red;
