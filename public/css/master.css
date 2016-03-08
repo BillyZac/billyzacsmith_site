@@ -108,7 +108,7 @@ body {
   color: #333; }
 
 .view-container {
-  width: 1000px;
+  width: 900px;
   display: flex;
   flex-direction: column; }
 
@@ -128,7 +128,7 @@ body {
     height: 300px; }
 
 logo.large {
-  width: 1000px;
+  width: 900px;
   position: fixed;
   z-index: -99; }
   logo.large .logo-svg-group {

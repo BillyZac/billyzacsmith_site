@@ -24,7 +24,7 @@
     $scope.datapoints = [];
       return $interval(
         function() {
-          $scope.datapoints = ChartDataService.makeDataPoints(18);
+          $scope.datapoints = ChartDataService.makeDataPoints(16);
       }, 500)
   }
 }())
