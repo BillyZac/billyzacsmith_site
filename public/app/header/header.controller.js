@@ -3,6 +3,7 @@
   .controller('HeaderController', HeaderController, ['$scope'])
 
   function HeaderController($scope, $state) {
+    console.log('ima header controller');
     var vm = this
 
     var isms = [
@@ -38,6 +39,7 @@
     /********** Nav **********/
     vm.show = false
     vm.toggleShow = function() {
+      console.log('clicked the toggler');
       vm.show = !vm.show
     }
 
