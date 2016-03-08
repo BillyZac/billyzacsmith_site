@@ -1,0 +1,40 @@
+.twee-container {
+  margin-top: 385px;
+  transition: margin 2s ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  color: $primary-color;
+}
+
+// @media for big screens
+// @media for small screens
+
+.view-container {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .small {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .large {
+    width: 70%;
+    height: 300px;
+  }
+}

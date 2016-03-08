@@ -1,0 +1,35 @@
+logo.large {
+  width: 1000px;
+  position: fixed;
+  z-index: -99;
+  .logo-svg-group {
+    transition: opacity 0.5s ease;
+  }
+  .blur {
+    opacity: 0;
+    filter: url(#blur-filter);
+  }
+  path {
+    stroke: none;
+  }
+}
+
+logo.small svg {
+  width: 200px;
+}
+
+.logo-container {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background: white; // frosted glass look
+  opacity: 0.95;
+}
+.zs-hide {
+  opacity: 0;
+}
+.zs-show {
+  opacity: 0.95;
+}

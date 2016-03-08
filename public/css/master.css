@@ -1,6 +1,6 @@
-/*body * {
-  outline: 5px dotted pink;
-}*/
+.chart path {
+  stroke: #E7C966; }
+
 .twee-container {
   margin-top: 385px;
   transition: margin 2s ease; }
@@ -9,7 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  color: #333; }
 
 .view-container {
   width: 1000px;
@@ -27,34 +28,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .row .small .orbit-container {
-      height: 80%;
-      width: 80%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .row .small .earth-system {
-      animation: spin 10s infinite;
-      width: 80%;
-      height: 20%;
-      display: flex;
-      justify-content: space-around; }
-    .row .small .earth {
-      width: 3rem;
-      height: 3rem;
-      background: #AEC5C4;
-      border-radius: 50%; }
-    .row .small .moon {
-      width: 1rem;
-      height: 1rem;
-      background: #AEC5C4;
-      border-radius: 50%; }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0turn); }
-  100% {
-    transform: rotate(1turn); } }
   .row .large {
     width: 70%;
     height: 300px; }
@@ -64,7 +37,7 @@ logo.large {
   position: fixed;
   z-index: -99; }
   logo.large .logo-svg-group {
-    transition: opacity 2s ease; }
+    transition: opacity 0.5s ease; }
   logo.large .blur {
     opacity: 0;
     filter: url(#blur-filter); }
@@ -89,18 +62,46 @@ logo.small svg {
 .zs-show {
   opacity: 0.95; }
 
-logo.large {
-  margin-top: 10px; }
+.orbit-container {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.earth-system {
+  animation: spin 10s infinite;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around; }
+
+.earth {
+  width: 3rem;
+  height: 3rem;
+  background: #AEC5C4;
+  border-radius: 50%; }
+
+.moon {
+  width: 1rem;
+  height: 1rem;
+  background: #E7C966;
+  border-radius: 50%; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0turn); }
+  100% {
+    transform: rotate(1turn); } }
+
+square01 svg,
+monster svg,
+bulb svg {
+  width: 100%;
+  height: 100%; }
 
 .svg-background {
   fill: none; }
-
-.invisible-box {
-  height: 600px;
-  width: 500px; }
-
-.chart path {
-  stroke: #E7C966; }
 
 .second-row .large {
   border-top: 40px solid #AEC5C4; }
@@ -111,12 +112,6 @@ logo.large {
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: bold; }
-
-square01 svg,
-monster svg,
-bulb svg {
-  width: 100%;
-  height: 100%; }
 
 square01 .cls-1 {
   fill: none;
@@ -152,16 +147,16 @@ bulb .cls-1 {
 
 bulb .cls-2 {
   fill: none;
-  stroke: #F7CAC9;
+  stroke: #E08B5F;
   stroke-miterlimit: 10;
   stroke-width: 5px; }
 
 triangle {
   width: 300px;
   height: 300px;
-  background: #F7CAC9; }
+  background: #E08B5F; }
   triangle .triangle-bottomleft {
     width: 0;
     height: 0;
-    border-bottom: 300px solid #AEC5C4;
+    border-bottom: 300px solid #E7C966;
     border-right: 300px solid transparent; }

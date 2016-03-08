@@ -6,6 +6,7 @@
     $scope.blur = 1
     $scope.logoFilter = 'no-filter'
     $scope.smallLogoVisible = 'zs-hide'
+    $scope.tagline = 'This guy is a web developer and designer in Denver, Colorado.'
 
     // Blur and fade the logo when the user scrolls
     var fadeLogoWhenYIsThisNumber = 20
