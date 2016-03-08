@@ -1,3 +1,31 @@
+.contact-page-container {
+  display: flex;
+  flex-direction: column; }
+
+.bio {
+  display: flex;
+  margin-bottom: 50px; }
+
+.bio p {
+  padding-top: 1rem;
+  font-size: 2.8rem; }
+
+.contact-photo {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin-right: 50px; }
+
+.contact-photo img {
+  max-width: 100%;
+  border-radius: 50%; }
+
+.contact-page-container p {
+  margin: 0; }
+
+.contact-page-container .fa {
+  margin-right: 1rem; }
+
 .chart path {
   stroke: #E5AF17; }
 
