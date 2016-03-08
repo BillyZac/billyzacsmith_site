@@ -33,3 +33,15 @@ logo.small svg {
 .zs-show {
   opacity: 0.95;
 }
+
+.zac-smith-logo {
+  .class1 {
+    fill: $red;
+  }
+  .class1, .class2 {
+    opacity: 0.8;
+  }
+  .class2 {
+    fill: $yellow;
+  }
+}

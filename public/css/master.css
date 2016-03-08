@@ -1,5 +1,5 @@
 .chart path {
-  stroke: #E7C966; }
+  stroke: #E5AF17; }
 
 .twee-container {
   margin-top: 385px;
@@ -62,6 +62,15 @@ logo.small svg {
 .zs-show {
   opacity: 0.95; }
 
+.zac-smith-logo .class1 {
+  fill: #E05417; }
+
+.zac-smith-logo .class1, .zac-smith-logo .class2 {
+  opacity: 0.8; }
+
+.zac-smith-logo .class2 {
+  fill: #E5AF17; }
+
 .orbit-container {
   height: 80%;
   width: 80%;
@@ -79,13 +88,13 @@ logo.small svg {
 .earth {
   width: 3rem;
   height: 3rem;
-  background: #AEC5C4;
+  background: #409690;
   border-radius: 50%; }
 
 .moon {
   width: 1rem;
   height: 1rem;
-  background: #E7C966;
+  background: #E5AF17;
   border-radius: 50%; }
 
 @keyframes spin {
@@ -104,11 +113,11 @@ bulb svg {
   fill: none; }
 
 .second-row .large {
-  border-top: 40px solid #AEC5C4; }
+  border-top: 40px solid #409690; }
   .second-row .large .tagline {
     margin: 0;
     padding: 0;
-    color: #E7C966;
+    color: #E5AF17;
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: bold; }
@@ -118,12 +127,12 @@ square01 .cls-1 {
   stroke: none; }
 
 square01 .cls-2 {
-  stroke: #E08B5F;
+  stroke: #E05417;
   fill: none;
   stroke-width: 5px; }
 
 square01 .cls-3 {
-  fill: #E08B5F; }
+  fill: #E05417; }
 
 square01 .cls-4 {
   fill: none;
@@ -131,7 +140,7 @@ square01 .cls-4 {
   stroke: white; }
 
 monster .cls-1 {
-  fill: #AEC5C4; }
+  fill: #409690; }
 
 monster .cls-2 {
   fill: white; }
@@ -143,20 +152,20 @@ monster .cls-3 {
   stroke-width: 5px; }
 
 bulb .cls-1 {
-  fill: #AEC5C4; }
+  fill: #409690; }
 
 bulb .cls-2 {
   fill: none;
-  stroke: #E08B5F;
+  stroke: #E05417;
   stroke-miterlimit: 10;
   stroke-width: 5px; }
 
 triangle {
   width: 300px;
   height: 300px;
-  background: #E08B5F; }
+  background: #E05417; }
   triangle .triangle-bottomleft {
     width: 0;
     height: 0;
-    border-bottom: 300px solid #E7C966;
+    border-bottom: 300px solid #E5AF17;
     border-right: 300px solid transparent; }
