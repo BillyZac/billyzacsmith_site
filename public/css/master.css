@@ -63,12 +63,12 @@ header h1 {
   margin-bottom: 1rem; }
 
 .nav-page-container a {
-  color: #505050;
+  color: #75726F;
   transition: color 0.2s;
   cursor: pointer; }
 
 .nav-page-container a:hover {
-  color: #F7CAC9; }
+  color: #E5AF17; }
 
 .nav-page-container p {
   margin-bottom: 0rem; }
@@ -90,11 +90,11 @@ header {
   right: 50px;
   top: 50px;
   font-size: 2rem;
-  color: #92A8D1;
+  color: #75726F;
   transition: 0.2s color ease; }
 
 .nav-toggle:hover {
-  color: #F7CAC9; }
+  color: #E5AF17; }
 
 .twee-container {
   margin-top: 385px;
@@ -233,11 +233,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #92A8D1;
+  color: #409690;
   transition: color 0.1s; }
 
 a:hover {
-  color: #F7CAC9; }
+  color: #E5AF17; }
 
 .subpage-container {
   margin: 20px 150px;
