@@ -9,3 +9,14 @@ Built with Angular.js and paper.
 Rose: #F7CAC9
 Blue: #92A8D1
 Gray: #505050
+
+## Integration tests
+First start the Selenium server:
+```
+webdriver-manager start
+```
+
+Then run the tests:
+```
+gulp integration-test
+```

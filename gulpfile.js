@@ -2,6 +2,7 @@ var config = require('./gulp.config')()
 var browserSync = require('browser-sync')
 var del = require('del')
 var gulp = require('gulp')
+var protractor = require("gulp-protractor").protractor
 var sass = require('gulp-sass')
 var webpack = require('gulp-webpack')
 
@@ -26,6 +27,15 @@ gulp.task('watch-sass', function() {
 
 gulp.task('start', ['sass', 'watch-sass'], function() {
   startBrowserSync()
+})
+
+gulp.task('integration-test', function() {
+  gulp.src(["protractor.spec.js"])
+    .pipe(protractor({
+        configFile: "protractor.config.js",
+        args: ['--baseUrl', 'http://127.0.0.1:8000']
+    }))
+    .on('error', function(e) { throw e })
 })
 
 //////////////////////
