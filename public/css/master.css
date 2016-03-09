@@ -97,8 +97,7 @@ body {
   color: #333;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  margin: 0;
-  margin-top: 80px; }
+  margin: 80px 20px; }
 
 .view-container {
   width: 900px;
@@ -233,38 +232,28 @@ a:hover {
   100% {
     transform: rotate(1turn); } }
 
-/*body * {
-  outline: 1px solid pink;
-}*/
-.project {
+.portfolio-page .project {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px; }
 
-.project-title {
+.portfolio-page .project-title {
   border-bottom: 1px solid #eee;
   padding-bottom: 0.3rem; }
 
-.project-body {
+.portfolio-page .project-body {
   display: flex; }
+  .portfolio-page .project-body .project-thumbnail {
+    flex: 1 1 100px;
+    margin-right: 50px; }
+    .portfolio-page .project-body .project-thumbnail img {
+      max-width: 100%; }
+  .portfolio-page .project-body .project-description {
+    flex: 5; }
 
-.project-thumbnail {
-  height: 100px;
-  width: 100px;
-  margin-right: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.project-body img {
-  max-width: 100%; }
-
-.project-links a {
+.portfolio-page .project-links a {
   font-size: 1.6rem;
   margin-right: 1rem; }
-
-.project-description {
-  width: 60%; }
 
 square01 svg,
 monster svg,
