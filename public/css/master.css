@@ -119,7 +119,9 @@ body {
 
 @media (max-width: 1000px) {
   .hide-on-mobile {
-    display: none; } }
+    display: none; }
+  .home .twee-container {
+    margin-top: 0; } }
 
 .twee-container {
   margin-top: 385px;
