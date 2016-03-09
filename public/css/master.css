@@ -112,7 +112,15 @@ body {
   padding: 0;
   /*margin: 0;*/ }
 
-/*Show only on big screens*/
+/* Big screens */
+@media (min-width: 1000px) {
+  .hide-on-big-screens {
+    display: none; } }
+
+@media (max-width: 1000px) {
+  .hide-on-mobile {
+    display: none; } }
+
 .twee-container {
   margin-top: 385px;
   transition: margin 2s ease; }
@@ -151,6 +159,7 @@ logo.small svg {
   position: fixed;
   z-index: 99;
   top: 0;
+  left: 0;
   height: 100px;
   width: 100%;
   background: white;
@@ -162,14 +171,14 @@ logo.small svg {
 .zs-show {
   opacity: 0.95; }
 
-.zac-smith-logo .class1 {
-  fill: #E05417; }
-
-.zac-smith-logo .class1, .zac-smith-logo .class2 {
-  opacity: 0.8; }
-
-.zac-smith-logo .class2 {
-  fill: #E5AF17; }
+.zac-smith-logo {
+  margin-left: 50px; }
+  .zac-smith-logo .class1 {
+    fill: #E05417; }
+  .zac-smith-logo .class1, .zac-smith-logo .class2 {
+    opacity: 0.8; }
+  .zac-smith-logo .class2 {
+    fill: #E5AF17; }
 
 /*body * {
   outline: pink solid 1px;

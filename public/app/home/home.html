@@ -10,11 +10,21 @@
     margin-top: {{ logoHeight }}px;
   }
 </style>
-<div class="home view-container">
+
+<div class="hide-on-big-screens">
+  <div class="logo-container">
+    <logo class="small"></logo>
+  </div>
+</div>
+<div class="hide-on-mobile">
   <logo class="large"></logo>
   <div class="logo-container {{ smallLogoVisible }}">
     <logo class="small"></logo>
   </div>
+</div>
+
+<div class="home view-container">
+
 
   <div class="twee-container">
     <div class="row">
