@@ -1,34 +1,30 @@
-.contact-page-container {
-  display: flex;
-  flex-direction: column;
+.contact-page {
+  p {
+    margin: 0;
+  }
+  .fa {
+    margin-right: 1rem;
+  }
 }
 
 .bio {
   display: flex;
+  align-items: flex-end;
   margin-bottom: 50px;
-}
 
-.bio p {
-  padding-top: 1rem;
-  font-size: 2.8rem;
-}
+  .contact-photo {
+    flex: 1 1 250px;
+    margin-right: 2rem;
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+  }
 
-.contact-photo {
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  margin-right: 50px;
-}
+  p {
+    flex: 13;
+    padding-bottom: 1rem;
+    font-size: 2.8rem;
+  }
 
-.contact-photo img {
-  max-width: 100%;
-  border-radius: 50%;
-}
-
-.contact-page-container p {
-  margin: 0;
-}
-
-.contact-page-container .fa {
-  margin-right: 1rem;
 }

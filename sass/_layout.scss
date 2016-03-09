@@ -1,25 +1,48 @@
-.twee-container {
-  margin-top: 385px;
-  transition: margin 2s ease;
-}
-
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: sans-serif;
   color: $primary-color;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 80px;
 }
-
-// @media for big screens
-// @media for small screens
-
 .view-container {
   width: 900px;
   display: flex;
   flex-direction: column;
 }
+// .view[ui-view] {
+//   height: 100%;
+//   width: 600px;
+//   margin-top: 30px;
+// }
 
+.work-page {
+  background: #fff;
+  // padding: 30px 100px;
+  // margin: 0;
+  // height: 1000px;
+}
+
+.container-fluid {
+  padding: 0;
+  /*margin: 0;*/
+}
+/*Show only on big screens*/
+@media (min-width: 800px) {
+  // .tagline {
+  //   display: inline;
+  // }
+}
+
+// Home page
+.twee-container {
+  margin-top: 385px;
+  transition: margin 2s ease;
+}
 .row {
   width: 100%;
   height: 100%;
