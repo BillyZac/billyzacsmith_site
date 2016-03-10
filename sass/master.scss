@@ -75,13 +75,13 @@ bulb {
 }
 
 triangle {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   background: $red;
   .triangle-bottomleft {
     width: 0;
     height: 0;
-    border-bottom: 300px solid $yellow;
-    border-right: 300px solid transparent;
+    border-bottom: 270px solid $yellow;
+    border-right: 270px solid transparent;
   }
 }

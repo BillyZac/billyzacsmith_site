@@ -320,11 +320,11 @@ bulb .cls-2 {
   stroke-width: 5px; }
 
 triangle {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   background: #E05417; }
   triangle .triangle-bottomleft {
     width: 0;
     height: 0;
-    border-bottom: 300px solid #E5AF17;
-    border-right: 300px solid transparent; }
+    border-bottom: 270px solid #E5AF17;
+    border-right: 270px solid transparent; }
