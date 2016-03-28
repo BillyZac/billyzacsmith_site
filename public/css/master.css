@@ -4,6 +4,9 @@
 .contact-page .fa {
   margin-right: 1rem; }
 
+.contact-page .resume-link {
+  margin-top: 2rem; }
+
 .bio {
   display: flex;
   align-items: flex-end;
