@@ -92,6 +92,10 @@ header {
 .nav-toggle:hover {
   color: #E5AF17; }
 
+html {
+  margin: 0;
+  padding: 0; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -100,50 +104,17 @@ body {
   color: #333;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  margin: 80px 20px; }
+  margin: 0;
+  padding: 0; }
 
 .view-container {
   width: 900px;
   display: flex;
   flex-direction: column;
-  margin-top: 50px; }
+  margin-top: 150px; }
 
 .work-page {
   background: #fff; }
-
-.container-fluid {
-  padding: 0;
-  /*margin: 0;*/ }
-
-/* Big screens */
-@media (min-width: 1000px) {
-  .hide-on-big-screens {
-    display: none; } }
-
-@media (max-width: 1000px) {
-  .hide-on-mobile {
-    display: none; }
-  .home .twee-container {
-    margin-top: 0; } }
-
-.twee-container {
-  margin-top: 385px;
-  transition: margin 2s ease; }
-
-.row {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: space-between; }
-  .row .small {
-    width: 30%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .row .large {
-    width: 70%;
-    height: 300px; }
 
 logo.large {
   width: 900px;
@@ -273,61 +244,3 @@ bulb svg {
 
 .svg-background {
   fill: none; }
-
-.second-row .large {
-  border-top: 40px solid #409690; }
-  .second-row .large .tagline {
-    margin: 0;
-    padding: 0;
-    color: #E5AF17;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-weight: bold; }
-
-square01 .cls-1 {
-  fill: none;
-  stroke: none; }
-
-square01 .cls-2 {
-  stroke: #E05417;
-  fill: none;
-  stroke-width: 5px; }
-
-square01 .cls-3 {
-  fill: #E05417; }
-
-square01 .cls-4 {
-  fill: none;
-  stroke-width: 5px;
-  stroke: white; }
-
-monster .cls-1 {
-  fill: #409690; }
-
-monster .cls-2 {
-  fill: white; }
-
-monster .cls-3 {
-  fill: none;
-  stroke: white;
-  stroke-miterlimit: 10;
-  stroke-width: 5px; }
-
-bulb .cls-1 {
-  fill: #409690; }
-
-bulb .cls-2 {
-  fill: none;
-  stroke: #E05417;
-  stroke-miterlimit: 10;
-  stroke-width: 5px; }
-
-triangle {
-  width: 270px;
-  height: 270px;
-  background: #E05417; }
-  triangle .triangle-bottomleft {
-    width: 0;
-    height: 0;
-    border-bottom: 270px solid #E5AF17;
-    border-right: 270px solid transparent; }

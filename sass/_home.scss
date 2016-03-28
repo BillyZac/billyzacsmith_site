@@ -1,0 +1,41 @@
+/* Full page background video */
+video#bgvid,
+.mobile-hat-guy {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(/images/muybridge-hat-poster.jpg) no-repeat;
+  background-size: cover;
+}
+
+.title-mobile,
+.mobile-hat-guy {
+  display: none;
+}
+
+@media screen and (max-device-width: 800px) {
+  html {
+    font-size: 20px;
+  }
+  .mobile-hat-guy {
+    display: block;
+    background-position: center;
+  }
+  .title-mobile {
+    display: block;
+  }
+  #bgvid,
+  .title {
+    display: none;
+  }
+
+}

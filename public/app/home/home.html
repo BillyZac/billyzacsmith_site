@@ -1,66 +1,7 @@
-<style>
-  .zac-smith-logo {
-    /*opacity: {{ logoOpacity }};
-    transition: opacity .2s ease-in-out;*/
-  }
-  .invisible-box {
-    height: {{ invisibleBoxHeight }}px;
-  }
-  .twee-container {
-    margin-top: {{ logoHeight }}px;
-  }
-</style>
-
-<div class="hide-on-big-screens">
-  <div class="logo-container">
-    <logo class="small"></logo>
-  </div>
-</div>
-<div class="hide-on-mobile">
-  <logo class="large"></logo>
-  <div class="logo-container {{ smallLogoVisible }}">
-    <logo class="small"></logo>
-  </div>
-</div>
-
-<div class="home view-container">
-
-
-  <div class="twee-container">
-    <div class="row">
-      <div class="large">
-        <chart></chart>
-      </div>
-      <div class="small">
-      <square01></square01>
-      </div>
-    </div> <!-- end row -->
-
-    <div class="row second-row">
-      <div class="large">
-        <div class="tagline">{{ tagline }}</div>
-      </div>
-      <div class="small">
-        <div class="orbit-container">
-          <div class="earth-system">
-            <div class="earth"></div>
-            <div class="moon"></div>
-          </div>
-        </div>
-      </div> <!-- end small -->
-    </div> <!-- end second row -->
-
-    <div class="row third-row">
-      <div class="small">
-        <monster></monster>
-      </div>
-      <div class="small">
-        <bulb></bulb>
-      </div>
-      <div class="small">
-        <triangle></triangle>
-      </div>
-    </div> <!-- end row -->
-
-  </div>
+<div class="video-container">
+  <video autoplay loop poster="/images/muybridge-hat-poster.jpg" id="bgvid">
+    <source src="_.webm" type="video/webm">
+    <source src="/images/muybridge-hat.mp4" type="video/mp4">
+  </video>
+  <div class="mobile-hat-guy"></div>
 </div>

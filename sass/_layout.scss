@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,68 +11,21 @@ body {
   color: $primary-color;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  margin: 80px 20px;
+  // margin: 80px 20px;
+  margin: 0;
+  padding: 0;
   // margin-top: 80px;
 }
 .view-container {
   width: 900px;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 150px;
 }
-// .view[ui-view] {
-//   height: 100%;
-//   width: 600px;
-//   margin-top: 30px;
-// }
 
 .work-page {
   background: #fff;
   // padding: 30px 100px;
   // margin: 0;
   // height: 1000px;
-}
-
-.container-fluid {
-  padding: 0;
-  /*margin: 0;*/
-}
-
-/* Big screens */
-@media (min-width: 1000px) {
-  .hide-on-big-screens {
-    display: none;
-  }
-}
-@media (max-width: 1000px) {
-  .hide-on-mobile {
-    display: none;
-  }
-  .home .twee-container {
-    margin-top: 0;
-  }
-}
-
-// Home page
-.twee-container {
-  margin-top: 385px;
-  transition: margin 2s ease;
-}
-.row {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: space-between;
-
-  .small {
-    width: 30%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .large {
-    width: 70%;
-    height: 300px;
-  }
 }
