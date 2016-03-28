@@ -25,8 +25,7 @@ logo.small svg {
   left: 0;
   height: 100px;
   width: 100%;
-  background: white; // frosted glass look
-  opacity: 0.95;
+  background: hsla(360, 100%, 100%, 0.8);
 }
 .zs-hide {
   opacity: 0;
