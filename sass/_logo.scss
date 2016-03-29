@@ -25,7 +25,8 @@ logo.small svg {
   left: 0;
   height: 100px;
   width: 100%;
-  background: hsla(360, 100%, 100%, 0.8);
+  background: hsla(360, 100%, 100%, 0.8); // White
+  background: hsla(200, 10%, 10%, 0.5); // Dark
 }
 .zs-hide {
   opacity: 0;
@@ -36,13 +37,14 @@ logo.small svg {
 
 .zac-smith-logo {
   margin-left: 50px;
+  margin-top: 11px;
   .class1 {
-    fill: $red;
+    fill: $ivory;
   }
   .class1, .class2 {
     opacity: 0.8;
   }
   .class2 {
-    fill: $yellow;
+    fill: $ivory;
   }
 }

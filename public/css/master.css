@@ -64,7 +64,7 @@ header h1 {
   cursor: pointer; }
 
 .nav-page-container a:hover {
-  color: #E5AF17; }
+  color: #92A8D1; }
 
 .nav-page-container p {
   margin-bottom: 0rem; }
@@ -84,13 +84,13 @@ header {
   position: fixed;
   z-index: 1000;
   right: 50px;
-  top: 50px;
+  top: 27px;
   font-size: 3rem;
-  color: #75726F;
+  color: #FEFAEF;
   transition: 0.2s color ease; }
 
 .nav-toggle:hover {
-  color: #E5AF17; }
+  color: #F7CAC9; }
 
 html {
   margin: 0;
@@ -138,7 +138,8 @@ logo.small svg {
   left: 0;
   height: 100px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8); }
+  background: rgba(255, 255, 255, 0.8);
+  background: rgba(23, 26, 28, 0.5); }
 
 .zs-hide {
   opacity: 0; }
@@ -147,13 +148,14 @@ logo.small svg {
   opacity: 0.95; }
 
 .zac-smith-logo {
-  margin-left: 50px; }
+  margin-left: 50px;
+  margin-top: 11px; }
   .zac-smith-logo .class1 {
-    fill: #E05417; }
+    fill: #FEFAEF; }
   .zac-smith-logo .class1, .zac-smith-logo .class2 {
     opacity: 0.8; }
   .zac-smith-logo .class2 {
-    fill: #E5AF17; }
+    fill: #FEFAEF; }
 
 /*body * {
   outline: pink solid 1px;
@@ -174,11 +176,11 @@ logo.small svg {
 
 a {
   text-decoration: none;
-  color: #409690;
+  color: #92A8D1;
   transition: color 0.1s; }
 
 a:hover {
-  color: #E5AF17; }
+  color: #F7CAC9; }
 
 .orbit-container {
   height: 80%;
@@ -243,3 +245,37 @@ bulb svg {
 
 .svg-background {
   fill: none; }
+
+/* Full page background video */
+video#bgvid,
+.mobile-hat-guy {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(/images/muybridge-hat-poster.jpg) no-repeat;
+  background-size: cover; }
+
+.title-mobile,
+.mobile-hat-guy {
+  display: none; }
+
+@media screen and (max-device-width: 800px) {
+  html {
+    font-size: 20px; }
+  .mobile-hat-guy {
+    display: block;
+    background-position: center; }
+  .title-mobile {
+    display: block; }
+  #bgvid,
+  .title {
+    display: none; } }

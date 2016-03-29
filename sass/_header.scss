@@ -46,7 +46,7 @@ header h1 {
 }
 
 .nav-page-container a:hover {
-  color: $yellow;
+  color: $adobe-blue;
 }
 
 .nav-page-container p {
@@ -69,12 +69,12 @@ header {
   position: fixed;
   z-index: 1000;
   right: 50px;
-  top: 50px;
+  top: 27px;
   font-size: 3rem;
-  color: $gray;
+  color: $ivory;
   transition: 0.2s color ease;
 }
 
 .nav-toggle:hover {
-  color: $yellow;
+  color: $rose;
 }
