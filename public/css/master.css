@@ -116,6 +116,9 @@ body {
 .work-page {
   background: #fff; }
 
+logo {
+  display: inline-block; }
+
 logo.large {
   width: 900px;
   position: fixed;
