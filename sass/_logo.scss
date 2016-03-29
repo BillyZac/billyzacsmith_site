@@ -26,43 +26,49 @@ logo.small svg {
   height: 100px;
   width: 100%;
   background: hsla(360, 100%, 100%, 0.8); // White
+  .zac-smith-logo {
+    margin-left: 50px;
+    margin-top: 11px;
+    .class1 {
+      fill: $rose;
+    }
+    .class1, .class2 {
+      opacity: 0.8;
+    }
+    .class2 {
+      fill: $adobe-blue;
+    }
+  }
 }
 
 .home-logo-container {
   background: hsla(200, 10%, 10%, 0.5); // Dark
+  .zac-smith-logo {
+    .class1 {
+      fill: $ivory;
+    }
+    .class1, .class2 {
+      opacity: 0.8;
+    }
+    .class2 {
+      fill: $ivory;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
 
 .zs-hide {
   opacity: 0;
 }
 .zs-show {
   opacity: 0.95;
-}
-
-.zac-smith-logo {
-  margin-left: 50px;
-  margin-top: 11px;
-  .class1 {
-    fill: $rose;
-  }
-  .class1, .class2 {
-    opacity: 0.8;
-  }
-  .class2 {
-    fill: $adobe-blue;
-  }
-}
-
-logo.home-logo .zac-smith-logo {
-  margin-left: 50px;
-  margin-top: 11px;
-  .class1 {
-    fill: $ivory;
-  }
-  .class1, .class2 {
-    opacity: 0.8;
-  }
-  .class2 {
-    fill: $ivory;
-  }
 }
